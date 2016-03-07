@@ -1,0 +1,26 @@
+html,body {
+  font-family:Dense;
+}
+.header{
+  text-align:center;
+}
+.header .btn {
+  background-color:white;
+  width:300px;
+}
+.header img {
+  width: 300px;
+}
+
+.btn:focus {
+  outline:none;
+}
+.main {
+  text-align: center;
+}
+.main .container {
+  margin:auto;
+}
+.main img {
+  width: 250px;
+}

@@ -1,0 +1,149 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1345\cocoasubrtf380
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs22 \cf0 \CocoaLigature0 Last login: Mon Feb  8 14:52:16 on ttys000\
+D-69-91-174-93:~ timothykwan$ ssh tdkwan@u.washington.edu \
+ssh: Could not resolve hostname u.washington.edu: nodename nor servname provided, or not known\
+D-69-91-174-93:~ timothykwan$ tdkwan@dante.u.washington.edu\
+-bash: tdkwan@dante.u.washington.edu: command not found\
+D-69-91-174-93:~ timothykwan$ ssh tdkwan@dante.u.washington.edu\
+Password: \
+\
+              FOR USE BY AUTHORIZED ACCOUNT HOLDERS ONLY\
+ See www.washington.edu/computing/rules for policy on privacy and monitoring.\
+\
+dante11$ cd public_html/\
+dante11$ ls\
+index.html\
+dante11$ ^C\
+dante11$ ^C\
+dante11$ exit\
+logout\
+Connection to dante.u.washington.edu closed.\
+D-69-91-174-93:~ timothykwan$ documents\
+-bash: documents: command not found\
+D-69-91-174-93:~ timothykwan$ cd documents\
+D-69-91-174-93:documents timothykwan$ REVENGE\
+-bash: REVENGE: command not found\
+D-69-91-174-93:documents timothykwan$ cd REVENGE\
+D-69-91-174-93:REVENGE timothykwan$ sftp tdkwan@dante.u.washington.edu \
+Password: \
+Connected to dante.u.washington.edu.\
+sftp> lls\
+001 vance creek bridge.ai	Revenge.mov\
+Adobe After Effects Auto-Save	my year '16\
+CLICK17C.WAV			revenge intro.aep\
+IMG_4440.JPG			revenge intro.aep Logs\
+Revenge .ai			web\
+sftp> lcd web\
+sftp> lls\
+css		img		javascript	pages		revenge2.html\
+sftp> lls\
+css		img		index.html	javascript	pages\
+sftp> ls\
+public_html  \
+sftp> cd public_html\
+sftp> ls\
+index.html   \
+sftp> put *\
+Uploading css/ to /nfs/bronfs/uwfs/dw00/d08/tdkwan/css\
+css/ is not a regular file\
+Uploading img/ to /nfs/bronfs/uwfs/dw00/d08/tdkwan/img\
+img/ is not a regular file\
+Uploading index.html to /nfs/bronfs/uwfs/dw00/d08/tdkwan/index.html\
+index.html                                    100% 1178     1.2KB/s   00:00    \
+Uploading javascript/ to /nfs/bronfs/uwfs/dw00/d08/tdkwan/javascript\
+javascript/ is not a regular file\
+Uploading pages/ to /nfs/bronfs/uwfs/dw00/d08/tdkwan/pages\
+pages/ is not a regular file\
+sftp> ls\
+index.html   \
+sftp> put -r *\
+Uploading css/ to /nfs/bronfs/uwfs/dw00/d08/tdkwan/css\
+Couldn't canonicalise: No such file or directory\
+Unable to canonicalise path "/nfs/bronfs/uwfs/dw00/d08/tdkwan/css"\
+Uploading img/ to /nfs/bronfs/uwfs/dw00/d08/tdkwan/img\
+Couldn't canonicalise: No such file or directory\
+Unable to canonicalise path "/nfs/bronfs/uwfs/dw00/d08/tdkwan/img"\
+Uploading index.html to /nfs/bronfs/uwfs/dw00/d08/tdkwan/index.html\
+index.html                                    100% 1178     1.2KB/s   00:00    \
+Uploading javascript/ to /nfs/bronfs/uwfs/dw00/d08/tdkwan/javascript\
+Couldn't canonicalise: No such file or directory\
+Unable to canonicalise path "/nfs/bronfs/uwfs/dw00/d08/tdkwan/javascript"\
+Uploading pages/ to /nfs/bronfs/uwfs/dw00/d08/tdkwan/pages\
+Couldn't canonicalise: No such file or directory\
+Unable to canonicalise path "/nfs/bronfs/uwfs/dw00/d08/tdkwan/pages"\
+sftp> ls\
+index.html   \
+sftp> help\
+Available commands:\
+bye                                Quit sftp\
+cd path                            Change remote directory to 'path'\
+chgrp grp path                     Change group of file 'path' to 'grp'\
+chmod mode path                    Change permissions of file 'path' to 'mode'\
+chown own path                     Change owner of file 'path' to 'own'\
+df [-hi] [path]                    Display statistics for current directory or\
+                                   filesystem containing 'path'\
+exit                               Quit sftp\
+get [-Ppr] remote [local]          Download file\
+help                               Display this help text\
+lcd path                           Change local directory to 'path'\
+lls [ls-options [path]]            Display local directory listing\
+lmkdir path                        Create local directory\
+ln [-s] oldpath newpath            Link remote file (-s for symlink)\
+lpwd                               Print local working directory\
+ls [-1afhlnrSt] [path]             Display remote directory listing\
+lumask umask                       Set local umask to 'umask'\
+mkdir path                         Create remote directory\
+progress                           Toggle display of progress meter\
+put [-Ppr] local [remote]          Upload file\
+pwd                                Display remote working directory\
+quit                               Quit sftp\
+rename oldpath newpath             Rename remote file\
+rm path                            Delete remote file\
+rmdir path                         Remove remote directory\
+symlink oldpath newpath            Symlink remote file\
+version                            Show SFTP version\
+!command                           Execute 'command' in local shell\
+!                                  Escape to local shell\
+?                                  Synonym for help\
+sftp> ls\
+index.html   \
+sftp> lls\
+css		img		index.html	javascript	pages\
+sftp> mkdir css\
+sftp> mkdir img\
+sftp> mkdir javascript\
+sftp> mkdir pages\
+sftp> put -r *\
+Uploading css/ to /nfs/bronfs/uwfs/dw00/d08/tdkwan/css\
+css/.DS_Store                                 100% 6148     6.0KB/s   00:00    \
+css/main.css                                  100%  847     0.8KB/s   00:00    \
+css/untitled                                  100%    0     0.0KB/s   00:00    \
+Uploading img/ to /nfs/bronfs/uwfs/dw00/d08/tdkwan/img\
+img/.DS_Store                                 100% 6148     6.0KB/s   00:00    \
+img/001 vance creek bridge.svg                100% 1397KB   1.4MB/s   00:01    \
+img/001 vance creek bridge.svgz               100% 1007KB   1.0MB/s   00:01    \
+img/001-vance-creek-bridge.jpg                100%   89KB  89.3KB/s   00:00    \
+img/header.jpg                                100% 2453KB   2.4MB/s   00:01    \
+img/justfriends.jpg                           100% 2901KB 967.0KB/s   00:03    \
+img/Revenge title.ai                          100%  151KB  50.4KB/s   00:03    \
+img/Revenge title.svg                         100% 1038     1.0KB/s   00:00    \
+img/Revenge-title.gif                         100% 2039     2.0KB/s   00:00    \
+Uploading index.html to /nfs/bronfs/uwfs/dw00/d08/tdkwan/index.html\
+index.html                                    100% 1178     1.2KB/s   00:00    \
+Uploading javascript/ to /nfs/bronfs/uwfs/dw00/d08/tdkwan/javascript\
+javascript/.DS_Store                          100% 6148     6.0KB/s   00:00    \
+javascript/jquery-1.12.0.min.js               100%   95KB  95.1KB/s   00:01    \
+javascript/jquery-2.2.0.min.js                100%   84KB  83.6KB/s   00:00    \
+javascript/masonry.pkgd.min.js                100%   22KB  22.4KB/s   00:00    \
+javascript/script.js                          100%  184     0.2KB/s   00:00    \
+Uploading pages/ to /nfs/bronfs/uwfs/dw00/d08/tdkwan/pages\
+sftp> put index.html \
+Uploading index.html to /nfs/bronfs/uwfs/dw00/d08/tdkwan/index.html\
+index.html                                    100% 1200     1.2KB/s   00:00    \
+sftp> \
+}
